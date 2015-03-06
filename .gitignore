@@ -1,0 +1,13 @@
+#Temp files for editors
+.*swp
+.*swo
+
+#OSX Rubbish
+.DS_Store
+
+#npm
+node_modules
+npm-debug.log
+
+#Vagrant
+.vagrant/

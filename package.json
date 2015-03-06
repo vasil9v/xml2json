@@ -1,0 +1,35 @@
+{
+  "name": "xml2json",
+  "version": "0.0.0",
+  "description": "Converts well-formed XML into an equivalent JSON representation and back",
+  "main": "lib/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vasil9v/xml2json.git"
+  },
+  "dependencies": {
+    "xml2js": ""
+  },
+  "devDependencies": {
+    "mocha": "",
+    "should": ""
+  },
+  "keywords": [
+    "JavaScript",
+    "conversion",
+    "JSON",
+    "XML"
+  ],
+  "author": "Vasil Daskalopoulos (vasil9v)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/vasil9v/xml2json/issues"
+  },
+  "homepage": "https://github.com/vasil9v/xml2json"
+}
