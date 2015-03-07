@@ -7,28 +7,46 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/*.js"
+    "coverage": "mocha -r blanket -R html-cov test",
+    "lcov": "mocha -r blanket -R mocha-lcov-reporter",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vasil9v/xml2json.git"
+    "url": "http://github.com/vasil9v/xml2json.git"
   },
   "dependencies": {
     "xml2js": ""
   },
   "devDependencies": {
-    "mocha": "",
-    "should": ""
+    "blanket": "1.1.6",
+    "codeclimate-test-reporter": "0.0.4",
+    "mocha": "2.1.0",
+    "mocha-lcov-reporter": "0.0.1"
   },
+  "config": {
+    "blanket": {
+      "data-cover-never": [
+        "node_modules",
+        "test"
+      ],
+      "pattern": [ ]
+    }
+  },  
   "keywords": [
     "JavaScript",
     "conversion",
     "JSON",
     "XML"
   ],
-  "author": "Vasil Daskalopoulos (vasil9v)",
-  "license": "BSD",
+  "author": {
+    "name": "Vasil Daskalopoulos (vasil9v)",
+    "email": "vasil9v@gmail.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
   "bugs": {
+    "email": "vasil9v@gmail.com",
     "url": "https://github.com/vasil9v/xml2json/issues"
   },
   "homepage": "https://github.com/vasil9v/xml2json"
